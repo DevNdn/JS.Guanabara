@@ -6,8 +6,10 @@
   <title>Hora Dia</title>
 
   <style>
-    body{
-      background-color: rgb(0, 128, 255);
+    
+    body {
+      background-color: rgb(70, 142, 236);
+      font: normal 15pt Arial;
     }
 
     h1 {
@@ -15,7 +17,7 @@
       text-align: center;
     }
     
-    #container{
+    #container {
       border: 1px solid black;
       width: 400px;
       height: 400px;
@@ -28,6 +30,11 @@
       align-items: center;
 
       background-color: #faf7c3;
+      box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.515);
+    }
+
+    .top-msg {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.422);
     }
 
     .mostra {
@@ -44,6 +51,10 @@
       
     }
 
+    label {
+      font-size: 15px;
+    }
+
     .foto-container {
       width: 50%;
       height: 60%;
@@ -52,6 +63,15 @@
 
     #imagem {
       border-radius: 50%;
+      
+    }
+
+    footer {
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      font-size: 10px;
       
     }
 
@@ -65,7 +85,7 @@
 
   <div id="container">
 
-    <p>Preencha com seus dados para verificar</p>
+    <p class="top-msg">Preencha com seus dados para verificar</p>
 
     <input type="number" name="ano" id="anoNascimento" placeholder="Ano de Nascimento" required>
 
