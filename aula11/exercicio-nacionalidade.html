@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nacionalidade</title>
+</head>
+<body>
+  <h1>Nacionalidade</h1>
+
+  Onde você nasceu? <input type="text" name="pais" id="pais">
+  <button onclick="mostrarNac()">enviar</button>
+
+  <div class="resultado">...</div>
+
+  <script>
+
+   function mostrarNac(){
+    var pais = document.querySelector('#pais').value;
+    var resultado = document.querySelector('.resultado');
+
+    if (pais === 'Brasil'){
+      resultado.innerHTML = 'Brasileiro';
+
+      resultado.style.background = 'green';
+      resultado.style.padding = '20px';
+      resultado.style.color = 'white';
+
+    } else {
+      resultado.innerHTML = 'Estrangeiro';
+
+      resultado.style.background = 'blue';
+      resultado.style.color = 'white';
+      resultado.style.padding = '20px';
+
+    }
+
+   }
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETRAN</title>
+</head>
+<body>
+  <h1>Sistema de Multas</h1>
+  Velocidade do carro: <input type="number" name="vel" id="vel"> Km/h
+  
+  <input type="button" value="Verificar" onclick="multa()">
+  <br><br><br>
+
+
+
+  <div class="resultado">...</div>
+
+  <script>
+    function multa(){
+      var resultado = document.querySelector('.resultado');
+      var velocidade = Number(vel.value);
+
+      if (velocidade > 60 && velocidade <= 80) {
+        resultado.innerHTML = `Você foi <b>multado</b>! <br>`;
+        resultado.innerHTML += `Sua velocidade é de: <b> ${velocidade}Km/h </b>!<hr>`;
+        resultado.innerHTML += `Valor da Multa: R$ 50,00`;
+        resultado.style.background = '#EBAF10';
+        resultado.style.padding = '20px';
+        resultado.style.color = 'white';
+      } else if (velocidade > 80 && velocidade <= 120){
+        resultado.innerHTML = `Você foi <b>multado</b>! <br>`;
+        resultado.innerHTML += `Sua velocidade é de: <b> ${velocidade}Km/h </b>!<hr>`;
+        resultado.innerHTML += `Valor da Multa: R$ 100,00`;
+        resultado.style.background = 'red';
+        resultado.style.padding = '20px';
+        resultado.style.color = 'white';
+      } else if (velocidade > 120) {
+        resultado.innerHTML = `Infração <strong>GRAVÍSSIMA</strong>! <br>`;
+        resultado.innerHTML += `Sua velocidade é de: <b> ${velocidade}Km/h </b>!<hr>`;
+        resultado.innerHTML += `Valor da Multa: R$ 500,00. <br> Dirigir acima de 50% do limite da via é crime sujeito à pena de reclusão de 1 a 5 anos e multa.`;
+        resultado.style.background = 'red';
+        resultado.style.padding = '20px';
+        resultado.style.color = 'white';
+      } else {
+        resultado.innerHTML = `Dentro do limite de velocidade. <br>`;
+        resultado.innerHTML += `Mantenha-se com segurança. <br><hr>`;
+        resultado.innerHTML += `Faça do trânsito um ambiente seguro!.`;
+        resultado.style.background = 'green';
+        resultado.style.padding = '20px';
+        resultado.style.color = 'white';
+    }
+  }
+  </script>
+
+</body>
+</html>

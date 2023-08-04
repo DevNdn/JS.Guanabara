@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    #area{
+      font: normal 20pt Arial;
+      background-color: green;
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div id="area" >
+    ...
+  </div>
+
+  <script>
+    var d1 = document.querySelector('#area');
+    d1.addEventListener('click', clicar);
+    d1.addEventListener('mouseenter', entrou);
+    d1.addEventListener('mouseout', saiu);
+    // addEventListener vai substituir as funções inseridas no HTML para os eventos
+    /* 
+     * onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()"
+    
+    */
+
+
+   function clicar() {
+    d1.style.transition = `0.5s`;
+    d1.innerHTML = `Clicou!`;
+    d1.style.background = `orange`;
+   }
+
+   function entrou() {
+    d1.style.transition = `0.5s`;
+    d1.innerHTML = `Entrou!`;
+   }
+
+   function saiu() {
+    d1.style.transition = `0.5s`;
+    d1.innerHTML = `Saiu!`;
+    d1.style.background = `green`;
+   }
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM 2</title>
+</head>
+<body>
+  <h1>Somando Valores</h1>
+
+  <input type="number" name="txtn1" id="txtn1"> +
+  <input type="number" name="txtn2" id="txtn2">
+  <input type="button" value="somar" onclick="somar()">
+  <br><br><br>
+
+  <div class="resultado">RESULTADO</div>
+
+  <script>
+    function somar() {
+      // selecionar os elementos em HTML
+      var tn1 = document.querySelector('#txtn1');
+      var tn2 = document.querySelector('#txtn2');
+      var corpo = document.body;
+
+      // armazenar os valores colocados no INPUT em forma de número
+      var n1 = Number(tn1.value);
+      var n2 = Number(tn2.value);
+
+      var s = n1 + n2;
+
+      var resultado = document.querySelector('.resultado');
+
+      resultado.innerHTML = `O resultado entre ${n1} e ${n2} é ${s}`;
+      resultado.style.background = `green`;
+      resultado.style.padding = `20px`;
+      resultado.style.color = `white`;
+      resultado.style.font = `bolder 20pt Arial`;
+      resultado.style.border = `5px solid yellow`;
+      resultado.style.padding = '20px'
+      resultado.style.margin = '0 auto'
+
+      corpo.style.background = 'gray';
+      corpo.style.color = 'white';
+    }
+  </script>
+</body>
+</html>

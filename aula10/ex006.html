@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - 1ª Parte</title>
+  <style>
+    body {
+      background-color: rgb(68, 125, 199);
+      color: white;
+      font: normal 18pt Arial;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Iniciando DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+  <div id="msg">Clique em mim</div>
+  <div id="msg2">Clique em mim (2)</div>
+  <div class="msg3">Clique em mim (3)</div>
+  
+
+  <script>
+    var p1 = document.getElementsByTagName(`p`)[1];
+    var corpo = document.body;
+
+    document.write(`Está escrito assim ${p1.innerHTML}`);
+
+    p1.style.color = 'orange';
+    corpo.style.background = 'black';
+
+    var d1 = document.getElementById('msg');
+    d1.style.border = '1px solid white';
+    d1.style.padding = '10px';
+    d1.style.background = 'red';
+
+    var d2 = document.querySelector('#msg2');
+    d2.style.background = 'green';
+    d2.style.margin = '20px';
+    d2.style.padding = '10px';
+
+    var d3 = document.querySelector('.msg3');
+    d3.style.margin = '30px';
+    d3.style.background = 'yellow';
+    d3.style.color = 'black';
+    d3.style.padding = '10px';
+  </script>
+
+</body>
+</html>

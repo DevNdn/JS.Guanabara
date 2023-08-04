@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 004</title>
+
+  <style>
+
+    body{
+      background-color: lightblue;
+      padding-left: 10px;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Exercício 004</h1>
+  <p>Teste de variáveis</p>
+
+  <script>
+    // var name = prompt(`Qual seu nome?`);
+
+    document.write(`Olá, ${name}! <br>`);
+    document.write(`Seu nome tem ${name.length} letras. <br>`);
+    document.write(`Seu nome em letras maiúsculas ${name.toUpperCase()}. <br>`);
+    document.write(`Seu nome em letras minúsculas ${name.toLowerCase()}. <br>`);
+
+
+    //NUMBERS
+    var numero = 1523.03
+    document.write(`${numero} <br>`);
+    document.write(`${numero.toFixed(2)} <br>`);
+    document.write(`${numero.toFixed(3)} <br>`);
+    document.write(`${numero.toFixed(2).replace('.',',')} <br>`); // substituir ponto pra virgula
+
+    // mostra a variavel em moeda corrente
+    document.write(numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
+    document.write(numero.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}));
+    
+    
+  </script>
+
+</body>
+</html>
