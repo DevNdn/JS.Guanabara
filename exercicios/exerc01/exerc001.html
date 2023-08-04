@@ -6,12 +6,31 @@
   <title>Hora Dia</title>
 
   <style>
-    h1 {
-      display: block;
-      text-align: center;
+    html{
+      height: 100vh;
+      width: 100vw;
     }
     
-    #container{
+    html, body {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100%;
+      font: normal 15pt Arial;
+    }
+    
+    .h1 {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      padding-top: 10px;
+    
+    }
+    
+    #container {
       border: 1px solid black;
       width: 400px;
       height: 400px;
@@ -23,18 +42,18 @@
       align-items: center;
 
       background-color: #faf7c3;
+      box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.426);
     }
 
     .mostra {
-      background-color: red;
-      border: 1px solid red;
+      
+      border-bottom: red;
       width: 90%;
       height:50px;
       display: block;
       margin: 10px 0 30px 0;
-
       
-      color: white;
+      color: black;
       text-align: center;
       
     }
@@ -46,18 +65,31 @@
     }
 
     #img {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       border-radius: 50%;
+      box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.426);
     }
 
+    .rodape {
+      color: white;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-shadow: 0 2px 1px rgba(0, 0, 0, 0.537);
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      font-size: 15px;
+      
+      width: 100%;
+      
+    }
 
   </style>
 
 </head>
 <body>
 
-  <h1>Hora do Dia</h1>
+  <h1 class="h1">Hora do Dia</h1>
 
   <div id="container">
 
