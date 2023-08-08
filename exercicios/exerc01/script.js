@@ -47,7 +47,7 @@ if (hora>0&&hora<=12) {
 // 2) Tarde -------
   mostra.innerHTML = `Boa tarde. <br>`;
   mostra.innerHTML += `Agora são ${hora}:${minutos}`;
-  mostra.style.borderBottom = '2px solid rgba(3, 3, 3, 0.419)';
+  mostra.style.borderBottom = '2px solid rgb(252,176,69)';
   
   mostra.style.color = '#fff';
   corpo.style.background = 'rgb(70,27,99)';
@@ -70,6 +70,7 @@ if (hora>0&&hora<=12) {
   mostra.innerHTML += `Agora são ${hora}:${minutos}`;
   
   mostra.style.color = 'white';
+  mostra.style.borderBottom = '2px solid red';
   
   corpo.style.background = '#0F1926';
   corpo.style.color = 'white';

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hora Dia</title>
+  <title>Verificador de Idade</title>
 
   <style>
     
@@ -89,9 +89,16 @@
 
     <input type="number" name="ano" id="anoNascimento" placeholder="Ano de Nascimento" required>
 
-    <label for="masculino"><input type="radio" id="masculino" name="sexo" value="1" required> Masculino</label>
+    <!-- 
+      Os inputs:radio devem ter o mesmo name quando forem aplicados ao mesmo contexto, se não da problema no JS.
+     -->
+    <label for="masculino">
+      <input type="radio" id="masculino" name="radsexo" required checked> Masculino
+    </label>
 
-    <label for="feminino"><input type="radio" id="feminino" name="sexo" value="2" required> Feminino</label>
+    <label for="feminino">
+      <input type="radio" id="feminino" name="radsexo" required> Feminino
+    </label>
 
     <button onclick="verificar()">Verificar</button>
 
