@@ -1,0 +1,17 @@
+Contador de passos
+
+Início
+
+Fim
+
+Passos (somar)
+
+botao -> Conta
+
+"Contando:
+  5  7  9  11 ... Fim"
+
+  Obs. 
+  1. "Impossível contar" -> caixa vazia;
+  2. se o passo for 0, alert passo invalido (desconsiderar passo 0 e considerar automaticamente como 1);
+  3. mostrar emojis com js

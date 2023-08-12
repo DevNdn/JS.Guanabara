@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada Select</title>
+  
+<style>
+  select{
+    overflow: visible;
+    border: none;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid black;
+
+    font-size: 1.2rem;
+  }
+</style>
+
+</head>
+<body>
+  <h1>Tabuada</h1>
+
+  <section id="main-container">
+
+    <p>Escolha um número:</p>
+    <input type="number" name="numTabuada" id="numTabuada" required="required">
+
+    <button onclick="tabuada()">Gerar Tabuada</button>
+    
+    <br><br><br>
+    
+    <div id="resultado">
+      <select name="selecionar" id="selecionar-resultado" size="10">
+
+      </select>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

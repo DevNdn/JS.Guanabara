@@ -1,0 +1,10 @@
+TABUADA
+
+Numero: ______      |btn.GerarTabela|
+
+select(lista) 
+  -> selecionar um numero do resultado que aparecer
+
+
+Obs.:
+1. não pode deixar o input vazio
